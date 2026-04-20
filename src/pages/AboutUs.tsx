@@ -251,11 +251,11 @@ const AboutUs = () => {
           {/* Section header */}
           <motion.div {...fadeUp} className="text-center mb-14">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-8 h-0.5 bg-primary" />
-              <span className="section-label text-primary">
+              <div className="w-8 h-0.5 bg-white" />
+              <span className="section-label text-white">
                 Industry Pedigree
               </span>
-              <div className="w-8 h-0.5 bg-primary" />
+              <div className="w-8 h-0.5 bg-white" />
             </div>
             <h2 className="section-title text-primary-foreground mb-4">
               DECADES OF BATTLE-TESTED EXPERIENCE
@@ -289,12 +289,12 @@ const AboutUs = () => {
                       border: "1px solid hsl(214 72% 55% / 0.25)",
                     }}
                   >
-                    <v.icon className="w-5 h-5 text-primary" />
+                    <v.icon className="w-5 h-5 text-white" />
                   </div>
 
                   {v.years !== null ? (
                     <div className="text-right">
-                      <div className="font-display font-bold text-3xl text-primary leading-none">
+                      <div className="font-display font-bold text-3xl text-white leading-none">
                         <CountUp target={v.years} suffix={v.suffix} />
                       </div>
                       <div className="font-mono text-[10px] text-primary-foreground/40 tracking-[0.18em] uppercase mt-0.5">
@@ -341,7 +341,7 @@ const AboutUs = () => {
                 key={stat.label}
                 className="bg-accent flex flex-col items-center justify-center py-5 px-4 text-center"
               >
-                <div className="font-display font-bold text-2xl text-primary leading-none mb-1">
+                <div className="font-display font-bold text-2xl text-white leading-none mb-1">
                   <CountUp
                     target={stat.value}
                     suffix={stat.suffix}
@@ -409,9 +409,9 @@ const AboutUs = () => {
         <div className="max-w-6xl mx-auto relative">
           <motion.div {...fadeUp} className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-8 h-0.5 bg-primary" />
-              <span className="section-label text-primary">Why Batara</span>
-              <div className="w-8 h-0.5 bg-primary" />
+              <div className="w-8 h-0.5 bg-white" />
+              <span className="section-label text-white">Why Batara</span>
+              <div className="w-8 h-0.5 bg-white" />
             </div>
             <h2 className="section-title text-primary-foreground mb-4">
               THE COMPLETE ADVANTAGE
