@@ -231,7 +231,7 @@ function DesignIllustration() {
       <circle r="5" fill="hsl(214 72% 85%)" filter="url(#dGlow)">
         <animateMotion dur="4s" repeatCount="indefinite" path="M 60 160 L 120 190 L 180 155 L 240 170 L 300 150" />
       </circle>
-      <text x="20" y="220" fill="hsl(214 72% 55%/0.5)" fontSize="8" fontFamily="monospace">STRESS ANALYSIS — FTA VERIFIED</text>
+      <text x="20" y="220" fill="rgba(255,255,255,0.8)" fontSize="8" fontFamily="monospace">STRESS ANALYSIS — FTA VERIFIED</text>
     </svg>
   );
 }
@@ -277,7 +277,7 @@ function ManufacturingIllustration() {
       <circle r="5" fill="hsl(214 72% 55%)" filter="url(#mGlow)" opacity="0.9">
         <animateMotion dur="5s" repeatCount="indefinite" path="M 30 130 L 60 90 L 120 80 L 200 80 L 260 90 L 290 130" />
       </circle>
-      <text x="30" y="218" fill="hsl(214 72% 50%/0.45)" fontSize="8" fontFamily="monospace">BIW · MOULD · SHEET METAL</text>
+      <text x="30" y="218" fill="hsl(214 72% 30%/0.85)" fontSize="8" fontFamily="monospace">BIW · MOULD · SHEET METAL</text>
     </svg>
   );
 }
@@ -314,7 +314,7 @@ function IntegratedIllustration() {
           path="M 42 112 L 100 112 L 158 112 L 216 112 L 274 112" />
         <animate attributeName="opacity" values="0.9;0.6;0.9" dur="5s" repeatCount="indefinite" />
       </circle>
-      <text x="30" y="215" fill="hsl(214 72% 55%/0.5)" fontSize="8" fontFamily="monospace">END-TO-END LIFECYCLE MANAGEMENT</text>
+      <text x="30" y="215" fill="hsl(214 72% 30%/0.85)" fontSize="8" fontFamily="monospace">END-TO-END LIFECYCLE MANAGEMENT</text>
     </svg>
   );
 }
@@ -360,7 +360,7 @@ function AnimationIllustration() {
       <line x1="63" y1="182" x2="97" y2="182" stroke="rgba(255,255,255,0.3)" strokeWidth="1" />
       <line x1="63" y1="191" x2="97" y2="191" stroke="rgba(255,255,255,0.22)" strokeWidth="1" />
       <line x1="63" y1="200" x2="85" y2="200" stroke="rgba(255,255,255,0.16)" strokeWidth="1" />
-      <text x="30" y="225" fill="rgba(255,255,255,0.35)" fontSize="8" fontFamily="monospace">3D ANIMATION · TECHNICAL MANUALS</text>
+      <text x="30" y="225" fill="rgba(255,255,255,0.8)" fontSize="8" fontFamily="monospace">3D ANIMATION · TECHNICAL MANUALS</text>
     </svg>
   );
 }
@@ -403,7 +403,7 @@ function ElectronicsIllustration() {
       <circle r="3.5" fill="hsl(214 72% 78%)" filter="url(#eGlow)">
         <animateMotion dur="2.5s" repeatCount="indefinite" begin="1.2s" path="M 180 120 L 220 120 L 220 80 L 260 80" />
       </circle>
-      <text x="30" y="218" fill="hsl(152 50% 45%/0.6)" fontSize="8" fontFamily="monospace">PCB ASSEMBLY · ELECTRONICS MFG</text>
+      <text x="30" y="218" fill="rgba(255,255,255,0.8)" fontSize="8" fontFamily="monospace">PCB ASSEMBLY · ELECTRONICS MFG</text>
     </svg>
   );
 }
