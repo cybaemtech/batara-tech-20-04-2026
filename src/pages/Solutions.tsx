@@ -11,6 +11,7 @@ import {
   Wrench,
   Box,
   Flame,
+  Settings,
   Shield,
   FileCheck,
   Eye,
@@ -74,6 +75,11 @@ const capabilities = [
     icon: Flame,
     title: "Casting Solutions",
     desc: "Investment, sand, and die casting design with complete metallurgical analysis.",
+  },
+  {
+    icon: Settings,
+    title: "Tool Designing",
+    desc: "Press tools, jigs, fixtures and progressive dies engineered for manufacturing excellence.",
   },
 ];
 
@@ -514,7 +520,7 @@ const Solutions = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {capabilities.map((cap, i) => (
               <motion.div
                 key={cap.title}
