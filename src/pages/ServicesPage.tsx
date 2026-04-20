@@ -430,11 +430,11 @@ const ServicesPage = () => {
       <Navbar />
 
       {/* ── Hero ── */}
-      <section className="relative pt-28 md:pt-36 pb-16 md:pb-20 px-4 sm:px-8 md:px-16 overflow-hidden">
+      <section className="relative min-h-screen flex items-center px-4 sm:px-8 md:px-16 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px]" />
         </div>
-        <div className="max-w-5xl mx-auto text-center relative z-[1]">
+        <div className="max-w-5xl mx-auto text-center relative z-[1] w-full">
           <motion.div {...fadeUp}>
             <SectionLabel>Our Services</SectionLabel>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
