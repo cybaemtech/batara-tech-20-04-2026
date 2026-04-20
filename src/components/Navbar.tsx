@@ -137,7 +137,10 @@ const Navbar = () => {
 
         {/* ── Services mega dropdown ── */}
         <li className="relative group">
-          <button className={`flex items-center gap-1 text-[13px] font-medium tracking-wider uppercase transition-colors py-2 ${location.pathname === "/services" ? "text-primary" : "text-silver hover:text-foreground"}`}>
+          <button
+            onClick={() => navigate("/services")}
+            className={`flex items-center gap-1 text-[13px] font-medium tracking-wider uppercase transition-colors py-2 ${location.pathname === "/services" ? "text-primary" : "text-silver hover:text-foreground"}`}
+          >
             Services
             <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" />
           </button>
