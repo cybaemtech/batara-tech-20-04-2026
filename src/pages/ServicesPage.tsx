@@ -173,12 +173,12 @@ const emCapabilities = [
 
 /* ─── Sub-components ─── */
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
+function SectionLabel({ children, light }: { children: React.ReactNode; light?: boolean }) {
   return (
     <div className="flex items-center gap-3 mb-4 justify-center">
-      <div className="w-8 h-0.5 bg-primary" />
-      <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">{children}</span>
-      <div className="w-8 h-0.5 bg-primary" />
+      <div className={`w-8 h-0.5 ${light ? "bg-white" : "bg-primary"}`} />
+      <span className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${light ? "text-white" : "text-primary"}`}>{children}</span>
+      <div className={`w-8 h-0.5 ${light ? "bg-white" : "bg-primary"}`} />
     </div>
   );
 }
@@ -563,20 +563,20 @@ const ServicesPage = () => {
           <div className="flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center mb-16">
             <motion.div {...fadeUp} className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-4">
-                <span className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                  <Factory className="w-4 h-4 text-primary" />
+                <span className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
+                  <Factory className="w-4 h-4 text-white" />
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Service 02</span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Service 02</span>
               </div>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4 leading-tight">
                 MANUFACTURING<br />ENGINEERING
-                <span className="block text-xl mt-1 text-primary font-semibold">BIW · Mould · Sheet Metal</span>
+                <span className="block text-xl mt-1 text-white/80 font-semibold">BIW · Mould · Sheet Metal</span>
               </h2>
               <p className="text-primary-foreground/70 text-[15px] leading-relaxed mb-4 max-w-xl">
                 We provide end-to-end manufacturing engineering support that bridges the gap between initial design and
                 final production — modernizing workflows and accelerating the manufacturing lifecycle.
               </p>
-              <p className="text-primary-foreground/70 text-[14px] leading-relaxed max-w-xl border-l-2 border-primary/40 pl-4">
+              <p className="text-primary-foreground/70 text-[14px] leading-relaxed max-w-xl border-l-2 border-white/30 pl-4">
                 Every component is engineered for downstream readiness — from a single sheet metal part to a full BIW assembly.
               </p>
             </motion.div>
@@ -600,18 +600,18 @@ const ServicesPage = () => {
                 className="p-6 rounded-xl border border-primary-foreground/10 bg-background/20 hover:border-primary/30 transition-colors"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                    <svc.icon className="w-5 h-5 text-primary" />
+                  <span className="w-10 h-10 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
+                    <svc.icon className="w-5 h-5 text-white" />
                   </span>
                   <div>
-                    <p className="text-[10px] uppercase tracking-widest text-primary font-semibold">{svc.label}</p>
+                    <p className="text-[10px] uppercase tracking-widest text-white/80 font-semibold">{svc.label}</p>
                     <h4 className="font-display font-bold text-primary-foreground text-[15px] leading-tight">{svc.title}</h4>
                   </div>
                 </div>
                 <ul className="space-y-2">
                   {svc.points.map((pt) => (
                     <li key={pt} className="flex items-start gap-2 text-primary-foreground/65 text-[13px] leading-relaxed">
-                      <ArrowRight className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                      <ArrowRight className="w-3.5 h-3.5 text-white/60 shrink-0 mt-0.5" />
                       {pt}
                     </li>
                   ))}
@@ -623,7 +623,7 @@ const ServicesPage = () => {
           {/* Why us */}
           <motion.div {...stagger(0.2)}>
             <h3 className="font-display font-bold text-primary-foreground text-xl mb-4 flex items-center gap-2">
-              <span className="w-1 h-5 bg-primary rounded-full inline-block" />
+              <span className="w-1 h-5 bg-white rounded-full inline-block" />
               Why Partner With Our Manufacturing Team?
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -632,8 +632,8 @@ const ServicesPage = () => {
                 { label: "Scalable Engineering Capacity", desc: "Full-spectrum extension of your internal team for high-volume backlogs." },
                 { label: "Quality-First Approach", desc: "Every component meets the highest precision standards." },
               ].map((item) => (
-                <div key={item.label} className="flex items-start gap-3 p-4 rounded-lg border border-primary-foreground/10 bg-background/15 hover:border-primary/30 transition-colors">
-                  <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                <div key={item.label} className="flex items-start gap-3 p-4 rounded-lg border border-primary-foreground/10 bg-background/15 hover:border-white/20 transition-colors">
+                  <CheckCircle2 className="w-4 h-4 text-white mt-0.5 shrink-0" />
                   <div>
                     <p className="font-semibold text-primary-foreground text-sm">{item.label}</p>
                     <p className="text-primary-foreground/60 text-xs mt-0.5 leading-relaxed">{item.desc}</p>
@@ -732,10 +732,10 @@ const ServicesPage = () => {
           <div className="flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center mb-16">
             <motion.div {...fadeUp} className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-4">
-                <span className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                  <Film className="w-4 h-4 text-primary" />
+                <span className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
+                  <Film className="w-4 h-4 text-white" />
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Service 04</span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Service 04</span>
               </div>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4 leading-tight">
                 TECHNICAL ANIMATION<br />& PUBLICATION
@@ -745,7 +745,7 @@ const ServicesPage = () => {
                 intricate engineering data into high-value, accessible content that supports the entire product and
                 plant lifecycle — from initial design through to aftermarket support.
               </p>
-              <p className="text-primary-foreground/70 text-[14px] leading-relaxed max-w-xl border-l-2 border-primary/40 pl-4">
+              <p className="text-primary-foreground/70 text-[14px] leading-relaxed max-w-xl border-l-2 border-white/30 pl-4">
                 Technical accuracy and clarity that reduce field errors and enhance end-user satisfaction.
               </p>
             </motion.div>
@@ -768,8 +768,8 @@ const ServicesPage = () => {
                 className="p-5 rounded-xl border border-primary-foreground/10 bg-background/20 hover:border-primary/30 transition-colors"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="w-9 h-9 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                    <pt.icon className="w-4 h-4 text-primary" />
+                  <span className="w-9 h-9 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
+                    <pt.icon className="w-4 h-4 text-white" />
                   </span>
                   <h4 className="font-semibold text-primary-foreground text-[14px] leading-tight">{pt.title}</h4>
                 </div>
@@ -781,7 +781,7 @@ const ServicesPage = () => {
           {/* Partner benefits */}
           <motion.div {...stagger(0.2)}>
             <h3 className="font-display font-bold text-primary-foreground text-xl mb-4 flex items-center gap-2">
-              <span className="w-1 h-5 bg-primary rounded-full inline-block" />
+              <span className="w-1 h-5 bg-white rounded-full inline-block" />
               Why Partner With Us?
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -790,8 +790,8 @@ const ServicesPage = () => {
                 { label: "Scalable Capacity", desc: "A seamless extension of your internal team, scaling documentation efforts quickly." },
                 { label: "Measurable Impact", desc: "Improved technical clarity drives operational efficiency and end-user satisfaction." },
               ].map((item) => (
-                <div key={item.label} className="flex items-start gap-3 p-4 rounded-lg border border-primary-foreground/10 bg-background/15 hover:border-primary/30 transition-colors">
-                  <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                <div key={item.label} className="flex items-start gap-3 p-4 rounded-lg border border-primary-foreground/10 bg-background/15 hover:border-white/20 transition-colors">
+                  <CheckCircle2 className="w-4 h-4 text-white mt-0.5 shrink-0" />
                   <div>
                     <p className="font-semibold text-primary-foreground text-sm">{item.label}</p>
                     <p className="text-primary-foreground/60 text-xs mt-0.5 leading-relaxed">{item.desc}</p>
@@ -882,7 +882,7 @@ const ServicesPage = () => {
       <section className="relative py-16 md:py-20 px-4 sm:px-8 md:px-16 bg-accent">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div {...fadeUp}>
-            <SectionLabel>Get Started</SectionLabel>
+            <SectionLabel light>Get Started</SectionLabel>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               READY TO ENGINEER YOUR SOLUTION?
             </h2>
