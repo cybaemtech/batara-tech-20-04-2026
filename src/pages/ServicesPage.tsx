@@ -477,26 +477,26 @@ const ServicesPage = () => {
       ══════════════════════════════════════════ */}
       <section
         id="engineering-design"
-        className="relative py-20 md:py-28 px-4 sm:px-8 md:px-16 scroll-mt-20"
+        className="relative py-20 md:py-28 px-4 sm:px-8 md:px-16 bg-accent scroll-mt-20"
       >
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center mb-16">
             <motion.div {...fadeUp} className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-4">
-                <span className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                  <Compass className="w-4 h-4 text-primary" />
+                <span className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
+                  <Compass className="w-4 h-4 text-white" />
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Service 01</span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Service 01</span>
               </div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4 leading-tight">
                 ENGINEERING DESIGN<br />& ANALYSIS
               </h2>
-              <p className="text-silver text-[15px] leading-relaxed mb-4 max-w-xl">
+              <p className="text-primary-foreground/70 text-[15px] leading-relaxed mb-4 max-w-xl">
                 Our approach drives design-led transformations that modernize workflows and accelerate the entire
                 product lifecycle. We combine deep domain knowledge with cutting-edge tools — from concept development
                 through to aftermarket support.
               </p>
-              <p className="text-silver text-[14px] leading-relaxed max-w-xl border-l-2 border-primary/30 pl-4">
+              <p className="text-primary-foreground/70 text-[14px] leading-relaxed max-w-xl border-l-2 border-white/30 pl-4">
                 Every design is precision-engineered for structural integrity, manufacturing readiness,
                 and long-term operational reliability.
               </p>
@@ -506,7 +506,7 @@ const ServicesPage = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="flex-shrink-0 w-full max-w-[340px] lg:max-w-[380px] h-[240px] rounded-xl border border-primary/15 bg-card/50 p-4 overflow-hidden"
+              className="flex-shrink-0 w-full max-w-[340px] lg:max-w-[380px] h-[240px] rounded-xl border border-primary/15 bg-background/30 p-4 overflow-hidden"
             >
               <DesignIllustration />
             </motion.div>
@@ -514,8 +514,8 @@ const ServicesPage = () => {
 
           {/* Capabilities grid */}
           <motion.div {...fadeUp} className="mb-10">
-            <h3 className="font-display font-bold text-foreground text-xl mb-6 flex items-center gap-2">
-              <span className="w-1 h-5 bg-primary rounded-full inline-block" />
+            <h3 className="font-display font-bold text-primary-foreground text-xl mb-6 flex items-center gap-2">
+              <span className="w-1 h-5 bg-white rounded-full inline-block" />
               Core Capabilities
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -523,15 +523,15 @@ const ServicesPage = () => {
                 <motion.div
                   key={cap.title}
                   {...stagger(i * 0.07)}
-                  className="group p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:bg-primary/3 transition-all"
+                  className="group p-5 rounded-xl border border-primary-foreground/10 bg-background/20 hover:border-white/30 transition-all"
                 >
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="w-9 h-9 rounded-lg bg-primary/8 border border-primary/15 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                      <cap.icon className="w-4 h-4 text-primary" />
+                    <span className="w-9 h-9 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                      <cap.icon className="w-4 h-4 text-white" />
                     </span>
-                    <h4 className="font-semibold text-foreground text-[14px] leading-tight">{cap.title}</h4>
+                    <h4 className="font-semibold text-primary-foreground text-[14px] leading-tight">{cap.title}</h4>
                   </div>
-                  <p className="text-silver text-[13px] leading-relaxed">{cap.desc}</p>
+                  <p className="text-primary-foreground/65 text-[13px] leading-relaxed">{cap.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -539,99 +539,12 @@ const ServicesPage = () => {
 
           {/* Why us */}
           <motion.div {...stagger(0.2)}>
-            <h3 className="font-display font-bold text-foreground text-xl mb-4 flex items-center gap-2">
-              <span className="w-1 h-5 bg-primary rounded-full inline-block" />
+            <h3 className="font-display font-bold text-primary-foreground text-xl mb-4 flex items-center gap-2">
+              <span className="w-1 h-5 bg-white rounded-full inline-block" />
               Why Choose Our Engineering Services?
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {designWhyUs.map((item) => (
-                <WhyCard key={item.label} label={item.label} desc={item.desc} />
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-          2. Manufacturing Engineering
-      ══════════════════════════════════════════ */}
-      <section
-        id="manufacturing-engineering"
-        className="relative py-20 md:py-28 px-4 sm:px-8 md:px-16 bg-accent scroll-mt-20"
-      >
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center mb-16">
-            <motion.div {...fadeUp} className="flex-1 min-w-0">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
-                  <Factory className="w-4 h-4 text-white" />
-                </span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Service 02</span>
-              </div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4 leading-tight">
-                MANUFACTURING<br />ENGINEERING
-                <span className="block text-xl mt-1 text-white/80 font-semibold">BIW · Mould · Sheet Metal</span>
-              </h2>
-              <p className="text-primary-foreground/70 text-[15px] leading-relaxed mb-4 max-w-xl">
-                We provide end-to-end manufacturing engineering support that bridges the gap between initial design and
-                final production — modernizing workflows and accelerating the manufacturing lifecycle.
-              </p>
-              <p className="text-primary-foreground/70 text-[14px] leading-relaxed max-w-xl border-l-2 border-white/30 pl-4">
-                Every component is engineered for downstream readiness — from a single sheet metal part to a full BIW assembly.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="flex-shrink-0 w-full max-w-[340px] lg:max-w-[380px] h-[240px] rounded-xl border border-primary/15 bg-background/30 p-4 overflow-hidden"
-            >
-              <ManufacturingIllustration />
-            </motion.div>
-          </div>
-
-          {/* 3 Service blocks */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
-            {mfgServices.map((svc, i) => (
-              <motion.div
-                key={svc.label}
-                {...stagger(i * 0.1)}
-                className="p-6 rounded-xl border border-primary-foreground/10 bg-background/20 hover:border-primary/30 transition-colors"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="w-10 h-10 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
-                    <svc.icon className="w-5 h-5 text-white" />
-                  </span>
-                  <div>
-                    <p className="text-[10px] uppercase tracking-widest text-white/80 font-semibold">{svc.label}</p>
-                    <h4 className="font-display font-bold text-primary-foreground text-[15px] leading-tight">{svc.title}</h4>
-                  </div>
-                </div>
-                <ul className="space-y-2">
-                  {svc.points.map((pt) => (
-                    <li key={pt} className="flex items-start gap-2 text-primary-foreground/65 text-[13px] leading-relaxed">
-                      <ArrowRight className="w-3.5 h-3.5 text-white/60 shrink-0 mt-0.5" />
-                      {pt}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Why us */}
-          <motion.div {...stagger(0.2)}>
-            <h3 className="font-display font-bold text-primary-foreground text-xl mb-4 flex items-center gap-2">
-              <span className="w-1 h-5 bg-white rounded-full inline-block" />
-              Why Partner With Our Manufacturing Team?
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {[
-                { label: "Manufacturing Readiness", desc: "Designs fully optimized for the actual manufacturing environment." },
-                { label: "Scalable Engineering Capacity", desc: "Full-spectrum extension of your internal team for high-volume backlogs." },
-                { label: "Quality-First Approach", desc: "Every component meets the highest precision standards." },
-              ].map((item) => (
                 <div key={item.label} className="flex items-start gap-3 p-4 rounded-lg border border-primary-foreground/10 bg-background/15 hover:border-white/20 transition-colors">
                   <CheckCircle2 className="w-4 h-4 text-white mt-0.5 shrink-0" />
                   <div>
@@ -646,31 +559,124 @@ const ServicesPage = () => {
       </section>
 
       {/* ══════════════════════════════════════════
+          2. Manufacturing Engineering
+      ══════════════════════════════════════════ */}
+      <section
+        id="manufacturing-engineering"
+        className="relative py-20 md:py-28 px-4 sm:px-8 md:px-16 scroll-mt-20"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center mb-16">
+            <motion.div {...fadeUp} className="flex-1 min-w-0">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
+                  <Factory className="w-4 h-4 text-primary" />
+                </span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Service 02</span>
+              </div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
+                MANUFACTURING<br />ENGINEERING
+                <span className="block text-xl mt-1 text-primary/80 font-semibold">BIW · Mould · Sheet Metal</span>
+              </h2>
+              <p className="text-silver text-[15px] leading-relaxed mb-4 max-w-xl">
+                We provide end-to-end manufacturing engineering support that bridges the gap between initial design and
+                final production — modernizing workflows and accelerating the manufacturing lifecycle.
+              </p>
+              <p className="text-silver text-[14px] leading-relaxed max-w-xl border-l-2 border-primary/30 pl-4">
+                Every component is engineered for downstream readiness — from a single sheet metal part to a full BIW assembly.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="flex-shrink-0 w-full max-w-[340px] lg:max-w-[380px] h-[240px] rounded-xl border border-primary/15 bg-card/50 p-4 overflow-hidden"
+            >
+              <ManufacturingIllustration />
+            </motion.div>
+          </div>
+
+          {/* 3 Service blocks */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+            {mfgServices.map((svc, i) => (
+              <motion.div
+                key={svc.label}
+                {...stagger(i * 0.1)}
+                className="p-6 rounded-xl border border-border bg-card hover:border-primary/30 hover:bg-primary/3 transition-colors"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
+                    <svc.icon className="w-5 h-5 text-primary" />
+                  </span>
+                  <div>
+                    <p className="text-[10px] uppercase tracking-widest text-primary font-semibold">{svc.label}</p>
+                    <h4 className="font-display font-bold text-foreground text-[15px] leading-tight">{svc.title}</h4>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  {svc.points.map((pt) => (
+                    <li key={pt} className="flex items-start gap-2 text-silver text-[13px] leading-relaxed">
+                      <ArrowRight className="w-3.5 h-3.5 text-primary/60 shrink-0 mt-0.5" />
+                      {pt}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Why us */}
+          <motion.div {...stagger(0.2)}>
+            <h3 className="font-display font-bold text-foreground text-xl mb-4 flex items-center gap-2">
+              <span className="w-1 h-5 bg-primary rounded-full inline-block" />
+              Why Partner With Our Manufacturing Team?
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {[
+                { label: "Manufacturing Readiness", desc: "Designs fully optimized for the actual manufacturing environment." },
+                { label: "Scalable Engineering Capacity", desc: "Full-spectrum extension of your internal team for high-volume backlogs." },
+                { label: "Quality-First Approach", desc: "Every component meets the highest precision standards." },
+              ].map((item) => (
+                <div key={item.label} className="flex items-start gap-3 p-4 rounded-lg border border-primary/15 bg-primary/5 hover:border-primary/30 transition-colors">
+                  <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                  <div>
+                    <p className="font-semibold text-foreground text-sm">{item.label}</p>
+                    <p className="text-silver text-xs mt-0.5 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
           3. Electronics Manufacturing
       ══════════════════════════════════════════ */}
       <section
         id="electronics-manufacturing"
-        className="relative py-20 md:py-28 px-4 sm:px-8 md:px-16 scroll-mt-20"
+        className="relative py-20 md:py-28 px-4 sm:px-8 md:px-16 bg-accent scroll-mt-20"
       >
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center mb-16">
             <motion.div {...fadeUp} className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-4">
-                <span className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                  <CircuitBoard className="w-4 h-4 text-primary" />
+                <span className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
+                  <CircuitBoard className="w-4 h-4 text-white" />
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Service 03</span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Service 03</span>
               </div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4 leading-tight">
                 ELECTRONICS MANUFACTURING
-                <span className="block text-xl mt-1 text-primary font-semibold">PCB & Electromechanical</span>
+                <span className="block text-xl mt-1 text-white/80 font-semibold">PCB & Electromechanical</span>
               </h2>
-              <p className="text-silver text-[15px] leading-relaxed mb-4 max-w-xl">
+              <p className="text-primary-foreground/70 text-[15px] leading-relaxed mb-4 max-w-xl">
                 Our electronics manufacturing services leverage deep domain knowledge to construct and assemble
                 sophisticated electronic systems across various sectors — helping partners accelerate time-to-market
                 while remaining cost-effective with the highest quality standards.
               </p>
-              <p className="text-silver text-[14px] leading-relaxed max-w-xl border-l-2 border-primary/30 pl-4">
+              <p className="text-primary-foreground/70 text-[14px] leading-relaxed max-w-xl border-l-2 border-white/30 pl-4">
                 Every system built to reduce your total cost of ownership while meeting robust benchmarks for
                 reliability and safety.
               </p>
@@ -680,7 +686,7 @@ const ServicesPage = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="flex-shrink-0 w-full max-w-[340px] lg:max-w-[380px] h-[240px] rounded-xl border border-emerald-500/20 bg-card/50 p-4 overflow-hidden"
+              className="flex-shrink-0 w-full max-w-[340px] lg:max-w-[380px] h-[240px] rounded-xl border border-emerald-500/20 bg-background/30 p-4 overflow-hidden"
             >
               <ElectronicsIllustration />
             </motion.div>
@@ -691,15 +697,15 @@ const ServicesPage = () => {
               <motion.div
                 key={cap.title}
                 {...stagger(i * 0.08)}
-                className="group p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:bg-primary/3 transition-all"
+                className="group p-5 rounded-xl border border-primary-foreground/10 bg-background/20 hover:border-white/30 transition-all"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="w-9 h-9 rounded-lg bg-primary/8 border border-primary/15 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                    <cap.icon className="w-4 h-4 text-primary" />
+                  <span className="w-9 h-9 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                    <cap.icon className="w-4 h-4 text-white" />
                   </span>
-                  <h4 className="font-semibold text-foreground text-[14px] leading-tight">{cap.title}</h4>
+                  <h4 className="font-semibold text-primary-foreground text-[14px] leading-tight">{cap.title}</h4>
                 </div>
-                <p className="text-silver text-[13px] leading-relaxed">{cap.desc}</p>
+                <p className="text-primary-foreground/65 text-[13px] leading-relaxed">{cap.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -707,13 +713,13 @@ const ServicesPage = () => {
           {/* Highlight stat bar */}
           <motion.div
             {...stagger(0.3)}
-            className="p-6 rounded-xl border border-primary/20 bg-primary/5"
+            className="p-6 rounded-xl border border-white/20 bg-white/10"
           >
-            <p className="text-center text-silver text-[14px] leading-relaxed max-w-2xl mx-auto">
+            <p className="text-center text-primary-foreground/70 text-[14px] leading-relaxed max-w-2xl mx-auto">
               Specialized expertise for{" "}
-              <span className="text-foreground font-semibold">low-to-medium volume, high-mix</span> complex electronic
+              <span className="text-white font-semibold">low-to-medium volume, high-mix</span> complex electronic
               components — housed within{" "}
-              <span className="text-foreground font-semibold">Industry 4.0-linked facilities</span> utilizing modern
+              <span className="text-white font-semibold">Industry 4.0-linked facilities</span> utilizing modern
               supply chain technologies for predictable delivery and continuous quality improvement.
             </p>
           </motion.div>
