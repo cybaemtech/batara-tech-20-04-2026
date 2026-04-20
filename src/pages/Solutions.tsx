@@ -11,7 +11,6 @@ import {
   Wrench,
   Box,
   Flame,
-  Settings,
   Shield,
   FileCheck,
   Eye,
@@ -75,11 +74,6 @@ const capabilities = [
     icon: Flame,
     title: "Casting Solutions",
     desc: "Investment, sand, and die casting design with complete metallurgical analysis.",
-  },
-  {
-    icon: Settings,
-    title: "Tool Designing",
-    desc: "Press tools, jigs, fixtures and progressive dies engineered for manufacturing excellence.",
   },
 ];
 
@@ -505,11 +499,11 @@ const Solutions = () => {
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeUp} className="text-center mb-16">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-8 h-0.5 bg-primary" />
-              <span className="section-label text-primary">
+              <div className="w-8 h-0.5 bg-white" />
+              <span className="section-label text-white">
                 Production Support
               </span>
-              <div className="w-8 h-0.5 bg-primary" />
+              <div className="w-8 h-0.5 bg-white" />
             </div>
             <h2 className="section-title text-primary-foreground mb-4">
               CORE ENGINEERING CAPABILITIES
@@ -520,7 +514,7 @@ const Solutions = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {capabilities.map((cap, i) => (
               <motion.div
                 key={cap.title}
@@ -528,11 +522,11 @@ const Solutions = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-accent/80 border border-primary-foreground/10 rounded-lg p-6 hover:border-primary/30 transition-colors"
+                className="bg-accent/80 border border-primary-foreground/10 rounded-lg p-6 hover:border-white/20 transition-colors"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                    <cap.icon className="w-5 h-5 text-accent-orange-2" />
+                  <div className="w-12 h-12 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
+                    <cap.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
                     <h3 className="font-display font-bold text-primary-foreground text-lg mb-1">
