@@ -305,16 +305,6 @@ const Navbar = () => {
             )}
 
             <NavLink
-              to="/solutions"
-              className={({ isActive }) =>
-                `text-[13px] font-semibold uppercase tracking-widest transition-colors py-3 px-1 border-b border-white/[0.06] ${isActive ? "text-primary" : "text-white/70 hover:text-white"}`
-              }
-              onClick={() => setMobileOpen(false)}
-            >
-              Solutions
-            </NavLink>
-
-            <NavLink
               to="/careers"
               className={({ isActive }) =>
                 `text-[13px] font-semibold uppercase tracking-widest transition-colors py-3 px-1 border-b border-white/[0.06] ${isActive ? "text-primary" : "text-white/70 hover:text-white"}`
