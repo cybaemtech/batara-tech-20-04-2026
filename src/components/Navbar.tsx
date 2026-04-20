@@ -77,9 +77,9 @@ const Navbar = () => {
             <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" />
           </button>
 
-          <div className={`absolute top-full left-0 mt-2 w-[820px] ${megaBg} ${megaBorder} rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[200] flex overflow-hidden`}>
+          <div className={`fixed top-[76px] left-1/2 -translate-x-1/2 w-[780px] max-w-[calc(100vw-2rem)] ${megaBg} ${megaBorder} rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[200] flex overflow-hidden`}>
             {/* Left: plain list */}
-            <div className="w-[220px] shrink-0 p-6 border-r border-white/10">
+            <div className="w-[210px] shrink-0 p-6 border-r border-white/10">
               <p className="text-[9px] font-semibold tracking-[0.18em] uppercase text-white/40 mb-4">Industries</p>
               {industriesLeft.map((item, i) => (
                 <div key={item.label}>
@@ -142,9 +142,9 @@ const Navbar = () => {
             <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" />
           </button>
 
-          <div className={`absolute top-full left-0 mt-2 w-[820px] ${megaBg} ${megaBorder} rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[200] flex overflow-hidden`}>
+          <div className={`fixed top-[76px] left-1/2 -translate-x-1/2 w-[780px] max-w-[calc(100vw-2rem)] ${megaBg} ${megaBorder} rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[200] flex overflow-hidden`}>
             {/* Left: plain list */}
-            <div className="w-[240px] shrink-0 p-6 border-r border-white/10">
+            <div className="w-[230px] shrink-0 p-6 border-r border-white/10">
               <p className="text-[9px] font-semibold tracking-[0.18em] uppercase text-white/40 mb-4">Core Services</p>
               {servicesLeft.map((item, i) => (
                 <div key={item.label}>
