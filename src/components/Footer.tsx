@@ -17,8 +17,7 @@ const Footer = () => {
 
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 md:pt-1">
             <Link to="/industries" className="text-silver text-xs uppercase tracking-wider hover:text-foreground transition-colors">Industries</Link>
-            <Link to="/solutions" className="text-silver text-xs uppercase tracking-wider hover:text-foreground transition-colors">Solutions</Link>
-            <Link to="/technical-gallery" className="text-silver text-xs uppercase tracking-wider hover:text-foreground transition-colors">Technical Gallery</Link>
+            <Link to="/services" className="text-silver text-xs uppercase tracking-wider hover:text-foreground transition-colors">Services</Link>
             <Link to="/about" className="text-silver text-xs uppercase tracking-wider hover:text-foreground transition-colors">About Us</Link>
             <Link to="/careers" className="text-silver text-xs uppercase tracking-wider hover:text-foreground transition-colors">Careers</Link>
             <button onClick={goToContact} className="text-silver text-xs uppercase tracking-wider hover:text-foreground transition-colors">Contact</button>
