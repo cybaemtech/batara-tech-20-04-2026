@@ -723,10 +723,10 @@ const ServicesPage = () => {
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           style={{ zIndex: 0 }}
         />
-        {/* Dark overlays — preserve text readability */}
-        <div className="absolute inset-0 bg-[#060c1a]/75 pointer-events-none" style={{ zIndex: 1 }} />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#060c1a]/80 via-[#060c1a]/50 to-[#060c1a]/30 pointer-events-none" style={{ zIndex: 1 }} />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#060c1a]/40 via-transparent to-[#060c1a]/60 pointer-events-none" style={{ zIndex: 1 }} />
+        {/* Blue overlays — preserve text readability with blue tint */}
+        <div className="absolute inset-0 bg-[#071540]/65 pointer-events-none" style={{ zIndex: 1 }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#071540]/80 via-[#0a2060]/45 to-[#071540]/20 pointer-events-none" style={{ zIndex: 1 }} />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#071540]/35 via-transparent to-[#071540]/55 pointer-events-none" style={{ zIndex: 1 }} />
 
         <div className="max-w-6xl mx-auto" style={{ position: "relative", zIndex: 2 }}>
           <div className="flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center mb-16">
