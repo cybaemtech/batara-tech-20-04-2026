@@ -23,14 +23,14 @@ const industriesRight: NavItem[] = [
 ];
 
 const servicesLeft: NavItem[] = [
+  { label: "Engineering Design & Analysis", desc: "FEA, CFD & integrated project delivery.", href: "/services#engineering-design", icon: Compass },
   { label: "Manufacturing Engineering", desc: "BIW, mould design & sheet metal fabrication.", href: "/services#manufacturing-engineering", icon: Factory },
-  { label: "Technical Animation & Publication", desc: "3D renders, exploded views & technical documentation.", href: "/services#technical-animation", icon: Film },
 ];
 
 const servicesRight: NavItem[] = [
-  { label: "Engineering Design & Analysis", desc: "FEA, CFD & integrated project delivery.", href: "/services#engineering-design", icon: Compass },
-  { label: "Integrated Project Delivery", desc: "Electronics, mechanical & additive manufacturing unified.", href: "/services#integrated-project-delivery", icon: GitBranch },
   { label: "Electronics Manufacturing", desc: "PCB design & electromechanical assembly.", href: "/services#electronics-manufacturing", icon: CircuitBoard },
+  { label: "Integrated Project Delivery", desc: "Electronics, mechanical & additive manufacturing unified.", href: "/services#integrated-project-delivery", icon: GitBranch },
+  { label: "Technical Animation & Publication", desc: "3D renders, exploded views & technical documentation.", href: "/services#technical-animation", icon: Film },
 ];
 
 const WhatsAppIcon = () => (

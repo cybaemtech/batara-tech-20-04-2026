@@ -449,9 +449,9 @@ const ServicesPage = () => {
               {[
                 { label: "Engineering Design", href: "#engineering-design", icon: Compass },
                 { label: "Manufacturing", href: "#manufacturing-engineering", icon: Factory },
+                { label: "Electronics", href: "#electronics-manufacturing", icon: CircuitBoard },
                 { label: "Integrated Delivery", href: "#integrated-project-delivery", icon: GitBranch },
                 { label: "Animation & Docs", href: "#technical-animation", icon: Film },
-                { label: "Electronics", href: "#electronics-manufacturing", icon: CircuitBoard },
               ].map(({ label, href, icon: Icon }) => (
                 <a
                   key={href}
@@ -646,7 +646,82 @@ const ServicesPage = () => {
       </section>
 
       {/* ══════════════════════════════════════════
-          3. Integrated Project Delivery
+          3. Electronics Manufacturing
+      ══════════════════════════════════════════ */}
+      <section
+        id="electronics-manufacturing"
+        className="relative py-20 md:py-28 px-4 sm:px-8 md:px-16 scroll-mt-20"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center mb-16">
+            <motion.div {...fadeUp} className="flex-1 min-w-0">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
+                  <CircuitBoard className="w-4 h-4 text-primary" />
+                </span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Service 03</span>
+              </div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
+                ELECTRONICS MANUFACTURING
+                <span className="block text-xl mt-1 text-primary font-semibold">PCB & Electromechanical</span>
+              </h2>
+              <p className="text-silver text-[15px] leading-relaxed mb-4 max-w-xl">
+                Our electronics manufacturing services leverage deep domain knowledge to construct and assemble
+                sophisticated electronic systems across various sectors — helping partners accelerate time-to-market
+                while remaining cost-effective with the highest quality standards.
+              </p>
+              <p className="text-silver text-[14px] leading-relaxed max-w-xl border-l-2 border-primary/30 pl-4">
+                Every system built to reduce your total cost of ownership while meeting robust benchmarks for
+                reliability and safety.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="flex-shrink-0 w-full max-w-[340px] lg:max-w-[380px] h-[240px] rounded-xl border border-emerald-500/20 bg-card/50 p-4 overflow-hidden"
+            >
+              <ElectronicsIllustration />
+            </motion.div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+            {emCapabilities.map((cap, i) => (
+              <motion.div
+                key={cap.title}
+                {...stagger(i * 0.08)}
+                className="group p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:bg-primary/3 transition-all"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="w-9 h-9 rounded-lg bg-primary/8 border border-primary/15 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
+                    <cap.icon className="w-4 h-4 text-primary" />
+                  </span>
+                  <h4 className="font-semibold text-foreground text-[14px] leading-tight">{cap.title}</h4>
+                </div>
+                <p className="text-silver text-[13px] leading-relaxed">{cap.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Highlight stat bar */}
+          <motion.div
+            {...stagger(0.3)}
+            className="p-6 rounded-xl border border-primary/20 bg-primary/5"
+          >
+            <p className="text-center text-silver text-[14px] leading-relaxed max-w-2xl mx-auto">
+              Specialized expertise for{" "}
+              <span className="text-foreground font-semibold">low-to-medium volume, high-mix</span> complex electronic
+              components — housed within{" "}
+              <span className="text-foreground font-semibold">Industry 4.0-linked facilities</span> utilizing modern
+              supply chain technologies for predictable delivery and continuous quality improvement.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          4. Integrated Project Delivery
       ══════════════════════════════════════════ */}
       <section
         id="integrated-project-delivery"
@@ -659,7 +734,7 @@ const ServicesPage = () => {
                 <span className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
                   <GitBranch className="w-4 h-4 text-primary" />
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Service 03</span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Service 04</span>
               </div>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
                 INTEGRATED PROJECT<br />DELIVERY
@@ -735,7 +810,7 @@ const ServicesPage = () => {
                 <span className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
                   <Film className="w-4 h-4 text-white" />
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Service 04</span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">Service 05</span>
               </div>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4 leading-tight">
                 TECHNICAL ANIMATION<br />& PUBLICATION
@@ -799,81 +874,6 @@ const ServicesPage = () => {
                 </div>
               ))}
             </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-          5. Electronics Manufacturing
-      ══════════════════════════════════════════ */}
-      <section
-        id="electronics-manufacturing"
-        className="relative py-20 md:py-28 px-4 sm:px-8 md:px-16 scroll-mt-20"
-      >
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center mb-16">
-            <motion.div {...fadeUp} className="flex-1 min-w-0">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                  <CircuitBoard className="w-4 h-4 text-primary" />
-                </span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Service 05</span>
-              </div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
-                ELECTRONICS MANUFACTURING
-                <span className="block text-xl mt-1 text-primary font-semibold">PCB & Electromechanical</span>
-              </h2>
-              <p className="text-silver text-[15px] leading-relaxed mb-4 max-w-xl">
-                Our electronics manufacturing services leverage deep domain knowledge to construct and assemble
-                sophisticated electronic systems across various sectors — helping partners accelerate time-to-market
-                while remaining cost-effective with the highest quality standards.
-              </p>
-              <p className="text-silver text-[14px] leading-relaxed max-w-xl border-l-2 border-primary/30 pl-4">
-                Every system built to reduce your total cost of ownership while meeting robust benchmarks for
-                reliability and safety.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="flex-shrink-0 w-full max-w-[340px] lg:max-w-[380px] h-[240px] rounded-xl border border-emerald-500/20 bg-card/50 p-4 overflow-hidden"
-            >
-              <ElectronicsIllustration />
-            </motion.div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-            {emCapabilities.map((cap, i) => (
-              <motion.div
-                key={cap.title}
-                {...stagger(i * 0.08)}
-                className="group p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:bg-primary/3 transition-all"
-              >
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="w-9 h-9 rounded-lg bg-primary/8 border border-primary/15 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                    <cap.icon className="w-4 h-4 text-primary" />
-                  </span>
-                  <h4 className="font-semibold text-foreground text-[14px] leading-tight">{cap.title}</h4>
-                </div>
-                <p className="text-silver text-[13px] leading-relaxed">{cap.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Highlight stat bar */}
-          <motion.div
-            {...stagger(0.3)}
-            className="p-6 rounded-xl border border-primary/20 bg-primary/5"
-          >
-            <p className="text-center text-silver text-[14px] leading-relaxed max-w-2xl mx-auto">
-              Specialized expertise for{" "}
-              <span className="text-foreground font-semibold">low-to-medium volume, high-mix</span> complex electronic
-              components — housed within{" "}
-              <span className="text-foreground font-semibold">Industry 4.0-linked facilities</span> utilizing modern
-              supply chain technologies for predictable delivery and continuous quality improvement.
-            </p>
           </motion.div>
         </div>
       </section>

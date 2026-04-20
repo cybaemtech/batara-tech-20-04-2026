@@ -23,7 +23,7 @@ const services = [
     description:
       "We deliver end-to-end engineering design — from concept sketches to fully validated detailed drawings. Our team leverages advanced CAD platforms and simulation tools to ensure every component meets exact tolerances and industry standards.",
     features: [
-      "CAD Design (CATIA, NX, SolidWorks)",
+      "CAD Design (CATIA, NX, SolidWorks,Creo)",
       "FEA & Structural Simulation",
       "Tolerance & GD&T Analysis",
       "Design for Manufacturability (DFM)",
