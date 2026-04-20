@@ -11,7 +11,6 @@ import {
   Wrench,
   Box,
   Flame,
-  Settings,
   Shield,
   FileCheck,
   Eye,
@@ -62,24 +61,24 @@ const ecosystemSteps = [
 
 const capabilities = [
   {
+    icon: Ruler,
+    title: "Product Design",
+    desc: "End-to-end product design from concept to production-ready models, optimized for performance and manufacturability.",
+  },
+  {
     icon: Wrench,
-    title: "Sheet Metal Design",
-    desc: "Precision sheet metal solutions from concept to production with advanced tooling and DFM optimization.",
+    title: "Sheetmetal Die Design",
+    desc: "Precision sheet metal and die solutions from concept to production with advanced tooling and DFM optimization.",
   },
   {
     icon: Box,
-    title: "Plastic Mould Design",
+    title: "Plastic Mold Design",
     desc: "Complex injection moulding design with multi-cavity tooling and complete process simulation.",
   },
   {
     icon: Flame,
     title: "Casting Solutions",
     desc: "Investment, sand, and die casting design with complete metallurgical analysis.",
-  },
-  {
-    icon: Settings,
-    title: "Tool Designing",
-    desc: "Press tools, jigs, fixtures and progressive dies engineered for manufacturing excellence.",
   },
 ];
 
