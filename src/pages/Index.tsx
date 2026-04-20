@@ -7,6 +7,7 @@ import ServicesSection from "@/components/ServicesSection";
 import OurServicesSection from "@/components/OurServicesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
+import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 
 const panelStyle = (zIndex: number, first = false): CSSProperties => ({
@@ -70,6 +71,7 @@ const Index = () => {
         }}
       >
         <ContactSection />
+        <LocationSection />
         <Footer />
       </div>
     </div>
