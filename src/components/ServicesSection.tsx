@@ -69,8 +69,8 @@ const ServicesSection = () => {
           className="mb-8 md:mb-10"
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="section-label text-primary">Sectors We Serve</span>
+            <div className="w-8 h-0.5 bg-white" />
+            <span className="section-label text-white">Sectors We Serve</span>
           </div>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <h2 className="section-title text-primary-foreground">

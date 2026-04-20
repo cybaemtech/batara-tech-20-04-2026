@@ -107,10 +107,10 @@ const LocationSection = () => {
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-widest text-silver mb-1.5">Email</p>
                   <a
-                    href="mailto:info@bataratechno.com"
+                    href="mailto:management@bataratechnosolutions.com"
                     className="text-foreground text-[14px] font-medium hover:text-primary transition-colors"
                   >
-                    info@bataratechno.com
+                    management@bataratechnosolutions.com
                   </a>
                 </div>
               </div>

@@ -106,11 +106,11 @@ const ContactSection = () => {
           className="text-center mb-12"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="section-label text-primary">
+            <div className="w-8 h-0.5 bg-white" />
+            <span className="section-label text-white">
               Problem-Solving Portal
             </span>
-            <div className="w-8 h-0.5 bg-primary" />
+            <div className="w-8 h-0.5 bg-white" />
           </div>
           <h2 className="section-title text-primary-foreground mb-4">
             GOT AN ENGINEERING CHALLENGE? LET'S CRACK IT.
