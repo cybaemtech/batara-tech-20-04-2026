@@ -245,39 +245,39 @@ function ManufacturingIllustration() {
           <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
         </filter>
       </defs>
-      {/* BIW frame outline — white/silver on blue bg */}
-      <path d="M 30 130 L 60 90 L 120 80 L 200 80 L 260 90 L 290 130 L 290 170 L 30 170 Z" stroke="rgba(255,255,255,0.55)" strokeWidth="1.5" fill="rgba(255,255,255,0.04)" />
-      <path d="M 60 90 L 60 130" stroke="rgba(255,255,255,0.25)" strokeWidth="1" />
-      <path d="M 200 80 L 200 130" stroke="rgba(255,255,255,0.25)" strokeWidth="1" />
-      <path d="M 30 130 L 290 130" stroke="rgba(255,255,255,0.25)" strokeWidth="1" />
+      {/* BIW frame outline — blue on white bg */}
+      <path d="M 30 130 L 60 90 L 120 80 L 200 80 L 260 90 L 290 130 L 290 170 L 30 170 Z" stroke="hsl(214 72% 50%/0.55)" strokeWidth="1.5" fill="hsl(214 72% 50%/0.04)" />
+      <path d="M 60 90 L 60 130" stroke="hsl(214 72% 50%/0.25)" strokeWidth="1" />
+      <path d="M 200 80 L 200 130" stroke="hsl(214 72% 50%/0.25)" strokeWidth="1" />
+      <path d="M 30 130 L 290 130" stroke="hsl(214 72% 50%/0.25)" strokeWidth="1" />
       {/* Wheel 1 with rotating spokes */}
-      <circle cx="70" cy="170" r="18" stroke="rgba(255,255,255,0.65)" strokeWidth="1.5" fill="rgba(255,255,255,0.07)" />
-      <circle cx="70" cy="170" r="8" stroke="rgba(255,255,255,0.35)" strokeWidth="1" fill="none" />
-      <line x1="70" y1="152" x2="70" y2="188" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2">
+      <circle cx="70" cy="170" r="18" stroke="hsl(214 72% 50%/0.65)" strokeWidth="1.5" fill="hsl(214 72% 50%/0.07)" />
+      <circle cx="70" cy="170" r="8" stroke="hsl(214 72% 50%/0.35)" strokeWidth="1" fill="none" />
+      <line x1="70" y1="152" x2="70" y2="188" stroke="hsl(214 72% 50%/0.55)" strokeWidth="1.2">
         <animateTransform attributeName="transform" type="rotate" from="0 70 170" to="360 70 170" dur="4s" repeatCount="indefinite" />
       </line>
-      <line x1="52" y1="170" x2="88" y2="170" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2">
+      <line x1="52" y1="170" x2="88" y2="170" stroke="hsl(214 72% 50%/0.55)" strokeWidth="1.2">
         <animateTransform attributeName="transform" type="rotate" from="0 70 170" to="360 70 170" dur="4s" repeatCount="indefinite" />
       </line>
       {/* Wheel 2 with rotating spokes */}
-      <circle cx="250" cy="170" r="18" stroke="rgba(255,255,255,0.65)" strokeWidth="1.5" fill="rgba(255,255,255,0.07)" />
-      <circle cx="250" cy="170" r="8" stroke="rgba(255,255,255,0.35)" strokeWidth="1" fill="none" />
-      <line x1="250" y1="152" x2="250" y2="188" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2">
+      <circle cx="250" cy="170" r="18" stroke="hsl(214 72% 50%/0.65)" strokeWidth="1.5" fill="hsl(214 72% 50%/0.07)" />
+      <circle cx="250" cy="170" r="8" stroke="hsl(214 72% 50%/0.35)" strokeWidth="1" fill="none" />
+      <line x1="250" y1="152" x2="250" y2="188" stroke="hsl(214 72% 50%/0.55)" strokeWidth="1.2">
         <animateTransform attributeName="transform" type="rotate" from="0 250 170" to="360 250 170" dur="4s" repeatCount="indefinite" />
       </line>
-      <line x1="232" y1="170" x2="268" y2="170" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2">
+      <line x1="232" y1="170" x2="268" y2="170" stroke="hsl(214 72% 50%/0.55)" strokeWidth="1.2">
         <animateTransform attributeName="transform" type="rotate" from="0 250 170" to="360 250 170" dur="4s" repeatCount="indefinite" />
       </line>
       {/* Grid / mould pattern */}
-      <rect x="110" y="30" width="100" height="40" rx="3" stroke="rgba(255,255,255,0.35)" strokeWidth="1" fill="rgba(255,255,255,0.06)" />
-      <line x1="143" y1="30" x2="143" y2="70" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
-      <line x1="177" y1="30" x2="177" y2="70" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
-      <line x1="110" y1="50" x2="210" y2="50" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
+      <rect x="110" y="30" width="100" height="40" rx="3" stroke="hsl(214 72% 50%/0.35)" strokeWidth="1" fill="hsl(214 72% 50%/0.06)" />
+      <line x1="143" y1="30" x2="143" y2="70" stroke="hsl(214 72% 50%/0.2)" strokeWidth="1" />
+      <line x1="177" y1="30" x2="177" y2="70" stroke="hsl(214 72% 50%/0.2)" strokeWidth="1" />
+      <line x1="110" y1="50" x2="210" y2="50" stroke="hsl(214 72% 50%/0.2)" strokeWidth="1" />
       {/* Shine ball along BIW body outline */}
-      <circle r="5" fill="white" filter="url(#mGlow)" opacity="0.9">
+      <circle r="5" fill="hsl(214 72% 55%)" filter="url(#mGlow)" opacity="0.9">
         <animateMotion dur="5s" repeatCount="indefinite" path="M 30 130 L 60 90 L 120 80 L 200 80 L 260 90 L 290 130" />
       </circle>
-      <text x="30" y="218" fill="rgba(255,255,255,0.35)" fontSize="8" fontFamily="monospace">BIW · MOULD · SHEET METAL</text>
+      <text x="30" y="218" fill="hsl(214 72% 50%/0.45)" fontSize="8" fontFamily="monospace">BIW · MOULD · SHEET METAL</text>
     </svg>
   );
 }
