@@ -190,9 +190,9 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto text-center relative">
           <motion.div {...fadeUp}>
             <div className="flex items-center justify-center gap-3 mb-5">
-              <div className="w-8 h-0.5 bg-primary" />
-              <span className="section-label text-primary">About Us</span>
-              <div className="w-8 h-0.5 bg-primary" />
+              <div className="w-8 h-0.5 bg-white" />
+              <span className="section-label text-white">About Us</span>
+              <div className="w-8 h-0.5 bg-white" />
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               ENGINEERING REALITY,

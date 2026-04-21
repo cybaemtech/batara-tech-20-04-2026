@@ -261,13 +261,22 @@ const Navbar = () => {
           <div className="px-5 py-4 flex flex-col gap-0.5">
 
             {/* Mobile — Industries */}
-            <button
-              className="flex items-center justify-between w-full text-[13px] font-semibold uppercase tracking-widest text-white/70 hover:text-white transition-colors py-3 px-1 border-b border-white/[0.06]"
-              onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
-            >
-              Industries
-              <ChevronDown className={`w-4 h-4 text-primary transition-transform duration-200 ${mobileIndustriesOpen ? "rotate-180" : ""}`} />
-            </button>
+            <div className="flex items-center justify-between w-full border-b border-white/[0.06]">
+              <Link
+                to="/industries"
+                onClick={() => setMobileOpen(false)}
+                className="flex-1 text-[13px] font-semibold uppercase tracking-widest text-white/70 hover:text-white transition-colors py-3 px-1"
+              >
+                Industries
+              </Link>
+              <button
+                aria-label="Toggle industries menu"
+                className="p-3"
+                onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
+              >
+                <ChevronDown className={`w-4 h-4 text-primary transition-transform duration-200 ${mobileIndustriesOpen ? "rotate-180" : ""}`} />
+              </button>
+            </div>
             {mobileIndustriesOpen && (
               <div className="flex flex-col gap-0.5 py-2 px-2 mb-1 rounded-xl mt-1"
                 style={{ background: "rgba(30,60,120,0.18)", border: "1px solid rgba(255,255,255,0.06)" }}>
@@ -286,13 +295,22 @@ const Navbar = () => {
             )}
 
             {/* Mobile — Services */}
-            <button
-              className="flex items-center justify-between w-full text-[13px] font-semibold uppercase tracking-widest text-white/70 hover:text-white transition-colors py-3 px-1 border-b border-white/[0.06]"
-              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-            >
-              Services
-              <ChevronDown className={`w-4 h-4 text-primary transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`} />
-            </button>
+            <div className="flex items-center justify-between w-full border-b border-white/[0.06]">
+              <Link
+                to="/services"
+                onClick={() => setMobileOpen(false)}
+                className="flex-1 text-[13px] font-semibold uppercase tracking-widest text-white/70 hover:text-white transition-colors py-3 px-1"
+              >
+                Services
+              </Link>
+              <button
+                aria-label="Toggle services menu"
+                className="p-3"
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+              >
+                <ChevronDown className={`w-4 h-4 text-primary transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`} />
+              </button>
+            </div>
             {mobileServicesOpen && (
               <div className="flex flex-col gap-0.5 py-2 px-2 mb-1 rounded-xl mt-1"
                 style={{ background: "rgba(30,60,120,0.18)", border: "1px solid rgba(255,255,255,0.06)" }}>

@@ -165,11 +165,11 @@ const Solutions = () => {
         <div className="max-w-5xl mx-auto text-center relative">
           <motion.div {...fadeUp}>
             <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="w-8 h-0.5 bg-primary" />
-              <span className="section-label text-primary">
+              <div className="w-8 h-0.5 bg-white" />
+              <span className="section-label text-white">
                 Services & Technology
               </span>
-              <div className="w-8 h-0.5 bg-primary" />
+              <div className="w-8 h-0.5 bg-white" />
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
               WHERE DIGITAL PRECISION <br className="hidden md:block" />{" "}
@@ -604,9 +604,9 @@ const Solutions = () => {
         <div className="max-w-6xl mx-auto relative">
           <motion.div {...fadeUp} className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-8 h-0.5 bg-primary" />
-              <span className="section-label text-primary">Why This Matters</span>
-              <div className="w-8 h-0.5 bg-primary" />
+              <div className="w-8 h-0.5 bg-white" />
+              <span className="section-label text-white">Why This Matters</span>
+              <div className="w-8 h-0.5 bg-white" />
             </div>
             <h2 className="section-title text-primary-foreground mb-4">
               THE IMPACT OF PRECISION
@@ -631,7 +631,7 @@ const Solutions = () => {
                 transition={{ delay: i * 0.1 }}
                 className="group flex items-start gap-4 p-6 rounded-xl border border-primary-foreground/10 bg-accent/60 hover:border-primary/40 transition-all duration-300"
               >
-                <CheckCircle2 className="w-5 h-5 text-primary mt-1 shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-white mt-1 shrink-0" />
                 <div>
                   <p className="font-display font-bold text-primary-foreground text-lg mb-1">
                     {item.label}
@@ -664,7 +664,7 @@ const Solutions = () => {
               <ArrowRight className="w-4 h-4" />
             </button>
             <a
-              href="https://wa.me/"
+              href="https://wa.me/918105111599"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-8 py-3 border border-accent/30 rounded bg-accent/5 text-accent font-medium tracking-wide hover:bg-accent/10 hover:border-accent transition-all"

@@ -159,8 +159,8 @@ const Industries = () => {
 
           <motion.div {...fadeUp} transition={{ duration: 0.55, delay: 0.05 }}>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-0.5 bg-blue-400" />
-              <span className="section-label text-blue-400">Sectors We Serve</span>
+              <div className="w-8 h-0.5 bg-white" />
+              <span className="section-label text-white">Sectors We Serve</span>
             </div>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl">
               INDUSTRIES WE<br />
@@ -182,7 +182,7 @@ const Industries = () => {
               { value: "Tier-1", label: "OEM & Supply Chain" },
             ].map((s) => (
               <div key={s.label} className="flex flex-col">
-                <span className="font-display text-2xl font-bold text-blue-400">{s.value}</span>
+                <span className="font-display text-2xl font-bold text-white">{s.value}</span>
                 <span className="text-[11px] uppercase tracking-widest text-white/35 mt-0.5">{s.label}</span>
               </div>
             ))}
@@ -296,7 +296,7 @@ const Industries = () => {
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <Link
-                to="/solutions"
+                to="/services"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-primary/30 rounded text-primary text-[13px] font-semibold tracking-wide hover:bg-primary/10 hover:border-primary transition-all"
               >
                 Our Services

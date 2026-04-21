@@ -164,7 +164,7 @@ const Careers = () => {
               instruments — this is your place.
             </p>
             <a
-              href="mailto:careers@bataratechnosolutions.com"
+              href="#"
               className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-display font-extrabold text-sm tracking-wide rounded-lg hover:bg-[hsl(214_72%_44%)] hover:-translate-y-0.5 hover:shadow-[0_12px_32px_hsl(214_72%_37%/0.5)] transition-all relative overflow-hidden"
             >
               <span className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
@@ -247,7 +247,7 @@ const Careers = () => {
                 <h3 className="font-display font-bold text-foreground text-base mb-2">
                   {v.label}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   {v.desc}
                 </p>
               </motion.div>
@@ -269,9 +269,9 @@ const Careers = () => {
         <div className="relative max-w-3xl mx-auto text-center">
           <motion.div {...fadeUp}>
             <div className="flex items-center justify-center gap-3 mb-5">
-              <div className="w-8 h-0.5 bg-primary" />
-              <span className="section-label text-primary">Join the Team</span>
-              <div className="w-8 h-0.5 bg-primary" />
+              <div className="w-8 h-0.5 bg-white" />
+              <span className="section-label text-white">Join the Team</span>
+              <div className="w-8 h-0.5 bg-white" />
             </div>
             <h2 className="section-title text-primary-foreground mb-5">
               READY TO ENGINEER REALITY?
@@ -283,13 +283,13 @@ const Careers = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:careers@bataratechnosolutions.com"
+                href="#"
                 className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-display font-bold text-sm rounded-lg hover:bg-[hsl(214_72%_44%)] hover:-translate-y-0.5 hover:shadow-[0_12px_32px_hsl(214_72%_37%/0.5)] transition-all relative overflow-hidden"
               >
                 <span className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
                 <Mail className="w-4 h-4 relative" />
                 <span className="relative">
-                  careers@bataratechnosolutions.com
+                  Send Your Application
                 </span>
                 <ArrowRight className="w-4 h-4 relative group-hover:translate-x-1 transition-transform" />
               </a>
